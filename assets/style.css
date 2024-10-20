@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.main {
+  /* background-color: #ffaaaa; */
+  background-image: linear-gradient(#ff7777, #ffaaaa);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+html {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: none; /* Chrome, Safari, Opera */
+  scrollbar-color: #000;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.under {
+  width: 100%;
+  position: relative;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6px;
+  width: 100%;
+}
+.top h1 {
+  text-align: center;
+  margin: 0 16px;
+}
+.button .op {
+  padding: 8px 16px;
+  width: 100px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #fff;
+  border: solid 1px #00000036;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+}
+.box-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.button {
+  display: inline-block;
+  border-radius: 50px;
+}
+.good:hover {
+  box-shadow: 0 0 40px #ec63c3;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-property: box-shadow;
+}
+.bad:hover {
+  box-shadow: 0 0 40px #f50000;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition: opacity 0.5s; /* Smooth transition */
+  transition-property: box-shadow, opacity;
+  /* position: absolute; */
+  cursor: pointer;
+}
+#a1 {
+  display: inline-block;
+  transition: display 0.5s;
+}
+#a2 {
+  /* opacity: 0;dis */
+  display: none;
+  transition: display 0.5s;
+}
+#a3 {
+  display: none;
+  transition: display 0.5s;
+}
